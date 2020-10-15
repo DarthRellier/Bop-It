@@ -44,8 +44,7 @@ function check() {
     play();
   } else {
     let output = document.getElementById("output");
-    output.innerText = "your score was";
-    setTimeout(sayScore, 1000);
+    output.innerText = `your score was ${score}`;
   }
 }
 function colPress(color) {
@@ -55,12 +54,6 @@ function colPress(color) {
     let output = document.getElementById("output");
     output.innerText = "please press start";
   }
-}
-
-function sayScore() {
-  let output = document.getElementById("output");
-  output.innerText = score;
-  setTimeout(reset, 2000);
 }
 function reset() {
   let output = document.getElementById("output");
