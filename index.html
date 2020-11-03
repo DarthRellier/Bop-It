@@ -4,7 +4,7 @@
       body {
         background-image: linear-gradient(black, rgb(96, 0, 186));
       }
-      button {
+      div button {
         width: 40vw;
         height: 40vh;
         font-size: 40px;
@@ -17,27 +17,31 @@
     <form action="https://darthrellier.github.io">
       <button type="submit">Home</button>
     </form>
-    <p id="output" style="background-color: black; color: cyan"><br /></p>
-    <button style="background-color: red" onclick="colPress('red')">Red</button>
-    <button style="background-color: yellow" onclick="colPress('yellow')">
-      Yellow
-    </button>
-    <br />
-    <button
-      style="background-color: rgb(3, 181, 3)"
-      onclick="colPress('green')"
-    >
-      Green
-    </button>
-    <button style="background-color: blue" onclick="colPress('blue')">
-      Blue
-    </button>
-    <br />
-    <button
-      style="width: 80vw; height: 11vh; background-color: rgb(102, 9, 189)"
-      onclick="play()"
-    >
-      start
-    </button>
+    <div>
+      <p id="output" style="background-color: black; color: cyan"><br /></p>
+      <button style="background-color: red" onclick="colPress('red')">
+        Red
+      </button>
+      <button style="background-color: yellow" onclick="colPress('yellow')">
+        Yellow
+      </button>
+      <br />
+      <button
+        style="background-color: rgb(3, 181, 3)"
+        onclick="colPress('green')"
+      >
+        Green
+      </button>
+      <button style="background-color: blue" onclick="colPress('blue')">
+        Blue
+      </button>
+      <br />
+      <button
+        style="width: 80vw; height: 11vh; background-color: rgb(102, 9, 189)"
+        onclick="play()"
+      >
+        start
+      </button>
+    </div>
   </body>
 </html>
